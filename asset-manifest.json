@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nedaskibildis.github.io/static/css/main.484c8d29.css",
+    "main.js": "/nedaskibildis.github.io/static/js/main.58b808dd.js",
+    "static/media/LilGrotesk-Bold.otf": "/nedaskibildis.github.io/static/media/LilGrotesk-Bold.17a888b6c01df114d404.otf",
+    "static/media/LilGrotesk-Regular.otf": "/nedaskibildis.github.io/static/media/LilGrotesk-Regular.997b245d543c6da0d4da.otf",
+    "index.html": "/nedaskibildis.github.io/index.html",
+    "main.484c8d29.css.map": "/nedaskibildis.github.io/static/css/main.484c8d29.css.map",
+    "main.58b808dd.js.map": "/nedaskibildis.github.io/static/js/main.58b808dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.484c8d29.css",
+    "static/js/main.58b808dd.js"
+  ]
+}
