@@ -1,0 +1,16 @@
+
+@keyframes slide-in {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 13.5%;
+    }
+}
+
+/* Media query for screens with a width of 1000px or more */
+@media (min-width: 1000px) {
+    .section {
+        animation: slide-in 1s forwards; /* Apply the slide-in animation only on wider screens */
+    }
+}

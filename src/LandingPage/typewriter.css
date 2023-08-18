@@ -1,0 +1,98 @@
+body {
+  background: #182028;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* h1 {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+} */
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 31.35% { content: ""; }
+  1.65%, 29.70% { content: " D"; }
+  3.30%, 28.05% { content: " De"; }
+  4.95%, 26.40% { content: " Dev"; }
+  6.60%, 24.75% { content: " Deve"; }
+  8.25%, 23.10% { content: " Devel"; }
+  9.90%, 21.45% { content: " Develo"; }
+  11.55%, 19.80% { content: " Develop"; }
+  13.20%, 18.15% { content: " Develope"; }
+  14.85%, 16.50% { content: " Developer"; }
+
+  33.00%, 59.40% { content: ""; }
+  34.65%, 57.75% { content: " S"; }
+  37.96%, 56.10% { content: " St"; }
+  39.60%, 54.45% { content: " Stu"; }
+  41.25%, 52.80% { content: " Stud"; }
+  42.90%, 51.15% { content: " Stude"; }
+  44.55%, 49.50% { content: " Studen"; }
+  46.20%, 47.85% { content: " Student"; }
+
+  66.00%, 95.70% { content: ""; }
+  67.65%, 94.05% { content: " D"; }
+  69.30%, 92.40% { content: " De"; }
+  70.95%, 90.75% { content: " Des"; }
+  72.60%, 89.10% { content: " Desi"; }
+  74.25%, 87.45% { content: " Desig"; }
+  75.90%, 85.80% { content: " Design"; }
+  77.55%, 84.15% { content: " Designe"; }
+  79.20%, 82.50% { content: " Designer"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 10.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    33% { content: "student"; }
+    66% { content: "designer"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
